@@ -969,6 +969,12 @@ a.person-photo:hover {
   background: var(--crimson);
 }
 
+.pi-person .person-cv {
+  width: calc(100% + 24px);
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
 .person-links {
   display: flex;
   gap: 12px;
