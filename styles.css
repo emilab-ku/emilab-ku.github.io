@@ -944,6 +944,15 @@ a.person-photo:hover {
   margin: 0 0 14px;
 }
 
+.person-section-title {
+  width: 100%;
+  margin: 0 0 6px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
 .person-cv {
   list-style: none;
   padding: 0;
