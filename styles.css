@@ -851,15 +851,10 @@ body.home .section {
   margin-right: auto;
 }
 
-.member-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 800px;
-}
-
-.member-grid > .person {
-  flex: 0 1 calc((100% - 44px) / 3);
+.member-grid,
+.recruitment-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: none;
 }
 
 .recruitment-grid {
@@ -1419,10 +1414,6 @@ a.person-photo:hover {
     max-width: 574px;
   }
 
-  .member-grid > .person {
-    flex-basis: calc((100% - 22px) / 2);
-  }
-
   .team-grid > :last-child:nth-child(odd) {
     grid-column: 1 / -1;
     justify-self: center;
@@ -1481,11 +1472,6 @@ a.person-photo:hover {
   .team-grid {
     grid-template-columns: 1fr;
     max-width: 360px;
-  }
-
-  .member-grid > .person {
-    flex-basis: 100%;
-    width: 100%;
   }
 
   .team-grid > :last-child:nth-child(odd) {
