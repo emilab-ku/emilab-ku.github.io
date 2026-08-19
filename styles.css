@@ -851,6 +851,11 @@ body.home .section {
   margin-right: auto;
 }
 
+.member-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: none;
+}
+
 .recruitment-grid {
   margin-top: 22px;
 }
