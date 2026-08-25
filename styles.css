@@ -440,25 +440,33 @@ body.home .section {
 }
 
 /* ------------------------------------------------------------ Lectures --- */
-.lecture-card {
-  display: flex;
-  flex-direction: column;
-  min-height: 210px;
+.lecture-list {
+  display: grid;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0;
+  padding-left: 24px;
 }
 
-.lecture-card h3 {
-  margin: 10px 0 18px;
-  font-size: clamp(18px, 2vw, 22px);
-  line-height: 1.35;
+.lecture-list li {
+  padding-left: 8px;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-.lecture-title-ko {
-  margin-top: auto !important;
-  padding-top: 18px;
-  border-top: 1px solid var(--line-soft);
-  color: var(--crimson) !important;
-  font-size: 16px !important;
-  font-weight: 600;
+.lecture-list li::marker {
+  color: var(--crimson);
+}
+
+.lecture-list strong,
+.lecture-list span {
+  display: block;
+}
+
+.lecture-list span {
+  color: var(--body);
+  font-size: 16px;
 }
 
 .tag-row {
