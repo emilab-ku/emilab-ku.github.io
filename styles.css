@@ -906,10 +906,6 @@ body.home .section {
   color: inherit;
 }
 
-.pi-person {
-  background: #fff8fa;
-}
-
 .person:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
