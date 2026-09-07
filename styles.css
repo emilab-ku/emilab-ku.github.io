@@ -765,6 +765,38 @@ body.home .section {
   font-size: 12.5px;
 }
 
+.profile-compact-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.profile-compact-list li,
+.profile-compact-list li:first-child,
+.profile-compact-list li:last-child {
+  grid-template-columns: 1fr;
+  gap: 4px;
+  padding: 12px 14px;
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  background: var(--bg-soft);
+}
+
+.profile-compact-list .profile-list-meta {
+  font-size: 10.5px;
+  line-height: 1.35;
+}
+
+.profile-compact-list .profile-list-title {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.profile-compact-list .profile-list-sub {
+  margin-top: 2px;
+  font-size: 11.5px;
+  line-height: 1.45;
+}
+
 .profile-side-nav {
   position: sticky;
   top: 96px;
@@ -1898,6 +1930,10 @@ a.person-photo:hover {
   .profile-list li {
     grid-template-columns: 1fr;
     gap: 5px;
+  }
+
+  .profile-compact-list {
+    grid-template-columns: 1fr;
   }
 
   .header-inner {
