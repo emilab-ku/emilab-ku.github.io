@@ -673,6 +673,35 @@ body.home .section {
   line-height: 1.5;
 }
 
+.profile-record-copy {
+  position: relative;
+  min-width: 0;
+}
+
+.profile-record-copy > .profile-record-title,
+.profile-record-copy > .profile-record-org {
+  padding-right: 50px;
+}
+
+.profile-record-copy--wordmark > .profile-record-title,
+.profile-record-copy--wordmark > .profile-record-org {
+  padding-right: 68px;
+}
+
+.profile-record-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.profile-record-logo--wordmark {
+  width: 60px;
+  height: 30px;
+}
+
 .profile-record-title {
   color: var(--ink);
   font-size: 14px;
@@ -2016,6 +2045,13 @@ a.person-photo:hover {
   .news-item {
     grid-template-columns: 72px 1fr;
     gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-timeline li {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 }
 
