@@ -550,7 +550,9 @@ body.home .section {
 }
 
 .profile-portrait--formal {
+  width: min(82%, 240px);
   aspect-ratio: 4 / 5;
+  margin-inline: auto;
 }
 
 .profile-facts {
