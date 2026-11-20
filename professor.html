@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20261120-1" />
+    <link rel="stylesheet" href="styles.css?v=20261120-2" />
   </head>
   <body>
     <header class="site-header">
@@ -85,22 +85,43 @@
 
             <section class="profile-panel reveal" id="career">
               <h2>Experience</h2>
-              <div class="profile-record-grid">
-                <div class="profile-record-group">
+              <div class="profile-career-layout">
+                <div class="profile-record-group profile-career-intro">
                   <h3>Professional Experience</h3>
+                  <div class="profile-career-entry">
+                    <span class="profile-year">Sep 2026 — Present</span>
+                    <div class="profile-record-copy"><img class="profile-record-logo" src="images/ku-logo.svg" alt="" /><div class="profile-record-title">Assistant Professor</div><div class="profile-record-org">School of Electrical Engineering, Korea University · Seoul, South Korea</div><p class="profile-record-desc">Leading the Efficient Machine Intelligence Lab, with a focus on energy-efficient AI.</p></div>
+                  </div>
+                </div>
+
+                <div class="profile-career-entry profile-career-linked profile-career-amazon">
+                  <span class="profile-year">Jul 2025 — Aug 2026</span>
+                  <div class="profile-record-copy"><img class="profile-record-logo" src="images/logos/amazon.svg" alt="" /><div class="profile-record-title">Applied Scientist</div><div class="profile-record-org">Amazon AWS AI Labs · Bellevue, WA</div><p class="profile-record-desc">Built agentic video systems and improved their computational efficiency.</p></div>
+                </div>
+                <article class="profile-project-card profile-project-card--amazon">
+                  <div class="profile-project-heading">
+                    <span class="profile-project-kicker">Amazon AWS AI Labs</span>
+                    <h4>Efficient video agents</h4>
+                    <p>Agentic video systems designed to do more with less computation.</p>
+                  </div>
+                  <img src="images/amazon-video-agent.svg" alt="Video frames flowing through an AI agent toward a faster, more efficient result" />
+                </article>
+
+                <div class="profile-career-entry profile-career-linked profile-career-meta">
+                  <span class="profile-year">Jun 2024 — Jul 2025</span>
+                  <div class="profile-record-copy"><img class="profile-record-logo" src="images/logos/meta.svg" alt="" /><div class="profile-record-title">Machine Learning Research Scientist</div><div class="profile-record-org">Meta Reality Labs (CTRL-Labs) · New York, NY</div><p class="profile-record-desc">Designed neural networks for smart-glasses and wristband interactions.</p></div>
+                </div>
+                <article class="profile-project-card profile-project-card--meta">
+                  <div class="profile-project-heading">
+                    <span class="profile-project-kicker">Meta Reality Labs · CTRL-Labs</span>
+                    <h4>Neural interaction for wearables</h4>
+                    <p>Neural networks connecting wristband signals and smart-glasses experiences.</p>
+                  </div>
+                  <img src="images/meta-neural-wearables.svg" alt="A wristband signal connecting through a neural network to smart glasses" />
+                </article>
+
+                <div class="profile-career-tail">
                   <ol class="profile-timeline">
-                    <li>
-                      <span class="profile-year">Sep 2026 — Present</span>
-                      <div class="profile-record-copy"><img class="profile-record-logo" src="images/ku-logo.svg" alt="" /><div class="profile-record-title">Assistant Professor</div><div class="profile-record-org">School of Electrical Engineering, Korea University · Seoul, South Korea</div><p class="profile-record-desc">Leading the Efficient Machine Intelligence Lab, with a focus on energy-efficient AI.</p></div>
-                    </li>
-                    <li>
-                      <span class="profile-year">Jul 2025 — Aug 2026</span>
-                      <div class="profile-record-copy"><img class="profile-record-logo" src="images/logos/amazon.svg" alt="" /><div class="profile-record-title">Applied Scientist</div><div class="profile-record-org">Amazon AWS AI Labs · Bellevue, WA</div><p class="profile-record-desc">Built agentic video systems and improved their computational efficiency.</p></div>
-                    </li>
-                    <li>
-                      <span class="profile-year">Jun 2024 — Jul 2025</span>
-                      <div class="profile-record-copy"><img class="profile-record-logo" src="images/logos/meta.svg" alt="" /><div class="profile-record-title">Machine Learning Research Scientist</div><div class="profile-record-org">Meta Reality Labs (CTRL-Labs) · New York, NY</div><p class="profile-record-desc">Designed neural networks for smart-glasses and wristband interactions.</p></div>
-                    </li>
                     <li>
                       <span class="profile-year">Jun — Aug 2023</span>
                       <div class="profile-record-copy"><img class="profile-record-logo" src="images/logos/amazon.svg" alt="" /><div class="profile-record-title">Applied Scientist Intern</div><div class="profile-record-org">Amazon AWS AI Labs · Bellevue, WA</div><p class="profile-record-desc">Developed continual-learning methods for large-scale foundation vision models.</p></div>
@@ -111,7 +132,8 @@
                     </li>
                   </ol>
                 </div>
-                <div class="profile-record-group">
+
+                <div class="profile-record-group profile-career-education">
                   <h3>Education</h3>
                   <ol class="profile-timeline">
                     <li>
@@ -127,25 +149,6 @@
                       <div class="profile-record-copy"><img class="profile-record-logo" src="images/logos/sogang-shield.png" alt="" /><div class="profile-record-title">B.S. in Electrical Engineering</div><div class="profile-record-org">Sogang University</div></div>
                     </li>
                   </ol>
-                  <h3 class="profile-project-section-title">Selected Industry Research</h3>
-                  <div class="profile-project-visuals" aria-label="Selected industry research">
-                    <article class="profile-project-card profile-project-card--amazon">
-                      <div class="profile-project-heading">
-                        <span class="profile-project-kicker">Amazon AWS AI Labs</span>
-                        <h4>Efficient video agents</h4>
-                        <p>Agentic video systems designed to do more with less computation.</p>
-                      </div>
-                      <img src="images/amazon-video-agent.svg" alt="Video frames flowing through an AI agent toward a faster, more efficient result" />
-                    </article>
-                    <article class="profile-project-card profile-project-card--meta">
-                      <div class="profile-project-heading">
-                        <span class="profile-project-kicker">Meta Reality Labs · CTRL-Labs</span>
-                        <h4>Neural interaction for wearables</h4>
-                        <p>Neural networks connecting wristband signals and smart-glasses experiences.</p>
-                      </div>
-                      <img src="images/meta-neural-wearables.svg" alt="A wristband signal connecting through a neural network to smart glasses" />
-                    </article>
-                  </div>
                 </div>
               </div>
             </section>
