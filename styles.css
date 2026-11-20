@@ -638,52 +638,10 @@ body.home .section {
   line-height: 1.8;
 }
 
-.profile-career-layout {
+.profile-record-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 30px;
-  row-gap: 20px;
-  align-items: center;
-}
-
-.profile-career-intro,
-.profile-career-education {
-  align-self: start;
-}
-
-.profile-career-intro {
-  grid-row: 1;
-}
-
-.profile-career-education {
-  grid-row: 4;
-}
-
-.profile-career-intro,
-.profile-career-amazon,
-.profile-career-meta,
-.profile-career-tail {
-  grid-column: 1;
-}
-
-.profile-career-education,
-.profile-project-card {
-  grid-column: 2;
-}
-
-.profile-career-amazon,
-.profile-project-card--amazon {
-  grid-row: 2;
-}
-
-.profile-career-meta,
-.profile-project-card--meta {
-  grid-row: 3;
-}
-
-.profile-career-tail {
-  grid-row: 4;
-  align-self: start;
+  gap: 30px;
 }
 
 .profile-record-group h3 {
@@ -703,49 +661,16 @@ body.home .section {
   list-style: none;
 }
 
-.profile-timeline li,
-.profile-career-entry {
+.profile-timeline li {
   display: grid;
   grid-template-columns: 84px 1fr;
   gap: 14px;
   padding: 0 0 22px;
 }
 
-.profile-career-entry {
-  padding-bottom: 0;
-}
-
-.profile-career-linked {
-  position: relative;
-}
-
-.profile-career-linked::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  width: 25px;
-  height: 2px;
-  background: #d5a0a4;
-}
-
-.profile-career-linked::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: calc(50% - 4px);
-  left: calc(100% + 23px);
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 7px solid #d5a0a4;
-}
-
-.profile-career-meta::after {
-  background: #9aabd8;
-}
-
-.profile-career-meta::before {
-  border-left-color: #9aabd8;
+.profile-timeline-featured .profile-project-card {
+  grid-column: 1 / -1;
+  margin-top: 2px;
 }
 
 .profile-timeline li:last-child {
@@ -2106,36 +2031,9 @@ a.person-photo:hover {
     padding: 23px;
   }
 
-  .profile-career-layout,
+  .profile-record-grid,
   .profile-interest-grid {
     grid-template-columns: 1fr;
-  }
-
-  .profile-career-layout {
-    row-gap: 0;
-  }
-
-  .profile-career-layout > * {
-    grid-column: 1;
-    grid-row: auto;
-  }
-
-  .profile-career-linked {
-    margin-top: 24px;
-  }
-
-  .profile-career-linked::before,
-  .profile-career-linked::after {
-    display: none;
-  }
-
-  .profile-career-layout .profile-project-card {
-    margin-top: 10px;
-  }
-
-  .profile-career-tail,
-  .profile-career-education {
-    margin-top: 28px;
   }
 
   .profile-side-nav nav {
@@ -2220,8 +2118,7 @@ a.person-photo:hover {
 }
 
 @media (max-width: 480px) {
-  .profile-timeline li,
-  .profile-career-entry {
+  .profile-timeline li {
     grid-template-columns: 1fr;
     gap: 4px;
   }
