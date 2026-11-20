@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 270" fill="none">
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F7CCBF"/>
+      <stop offset="1" stop-color="#F5E1D7"/>
+    </linearGradient>
+    <linearGradient id="agent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFF"/>
+      <stop offset="1" stop-color="#FFE9E3"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#A55658" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <circle cx="324" cy="118" r="111" fill="#FCE3DD" fill-opacity=".55"/>
+  <circle cx="537" cy="74" r="67" fill="#F7D6C8" fill-opacity=".5"/>
+  <path d="M16 217c72-37 141-10 208-30 67-21 117-43 190-16 69 26 145 37 207-5" stroke="#ECC9C3" stroke-width="2" stroke-dasharray="3 10"/>
+
+  <g filter="url(#shadow)">
+    <rect x="45" y="74" width="104" height="116" rx="16" fill="#FFF" stroke="#E8C3B9" stroke-width="2"/>
+    <rect x="57" y="86" width="80" height="71" rx="9" fill="url(#frame)"/>
+    <circle cx="115" cy="103" r="8" fill="#FFE9BC"/>
+    <path d="m57 143 23-21 15 12 18-16 24 25v14H57v-14Z" fill="#D79F9E"/>
+    <rect x="69" y="166" width="45" height="5" rx="2.5" fill="#E7D6D1"/>
+    <rect x="117" y="166" width="15" height="5" rx="2.5" fill="#F2DDD6"/>
+    <rect x="80" y="48" width="104" height="116" rx="16" fill="#FFF" stroke="#E7B8AE" stroke-width="2"/>
+    <rect x="92" y="60" width="80" height="71" rx="9" fill="#F4D1C5"/>
+    <circle cx="151" cy="77" r="8" fill="#FFEFC6"/>
+    <path d="m92 118 21-17 17 14 18-20 24 25v11H92v-13Z" fill="#C98E91"/>
+    <rect x="104" y="140" width="45" height="5" rx="2.5" fill="#E7D6D1"/>
+    <rect x="152" y="140" width="15" height="5" rx="2.5" fill="#F2DDD6"/>
+  </g>
+  <circle cx="204" cy="122" r="15" fill="#FFF" stroke="#DAA5A4" stroke-width="2"/>
+  <path d="m201 115 9 7-9 7v-14Z" fill="#B76576"/>
+  <path d="M219 122h39" stroke="#C98592" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 8"/>
+  <path d="m251 116 9 6-9 6" stroke="#C98592" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="331" cy="122" r="67" fill="url(#agent)" stroke="#D99FA7" stroke-width="2.5"/>
+    <circle cx="331" cy="122" r="35" fill="#FFF" stroke="#E3B9BA" stroke-width="2"/>
+    <path d="m331 99 5.5 16.5L353 121l-16.5 5.5L331 143l-5.5-16.5L309 121l16.5-5.5L331 99Z" fill="#AE5773"/>
+    <circle cx="284" cy="93" r="7" fill="#EDAFA9"/>
+    <circle cx="375" cy="92" r="7" fill="#EBAA96"/>
+    <circle cx="287" cy="155" r="7" fill="#D59CB2"/>
+    <circle cx="377" cy="154" r="7" fill="#DDA39E"/>
+    <path d="m289 97 15 12m65-8-12 10m-66 42 15-13m63 6-12-12" stroke="#DBAAB0" stroke-width="2"/>
+  </g>
+  <path d="M399 122h38" stroke="#C98592" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 8"/>
+  <path d="m430 116 9 6-9 6" stroke="#C98592" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="518" cy="122" r="65" fill="#FFF" stroke="#E6BAB0" stroke-width="2.5"/>
+    <path d="M477 143a46 46 0 0 1 82-37" stroke="#EBCFC4" stroke-width="10" stroke-linecap="round"/>
+    <path d="M496 84a46 46 0 0 1 63 22" stroke="#BD7385" stroke-width="10" stroke-linecap="round"/>
+    <path d="m517 135 27-31" stroke="#8A1538" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="517" cy="135" r="7" fill="#8A1538"/>
+    <path d="M489 160h58" stroke="#E5D1CC" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="116" y="223" text-anchor="middle" fill="#985F69" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">VIDEO</text>
+  <text x="331" y="223" text-anchor="middle" fill="#985F69" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">AGENT</text>
+  <text x="518" y="223" text-anchor="middle" fill="#985F69" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">EFFICIENCY</text>
+</svg>
